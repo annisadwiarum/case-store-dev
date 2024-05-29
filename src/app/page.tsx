@@ -22,7 +22,7 @@ export default function Home() {
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 {' '}
                 Lorem ipsum{' '}
-                <span className="bg-violet-400 px-2 text-white">dolor</span> sit
+                <span className="bg-yellow-500 px-2 text-white">dolor</span> sit
                 amet.{' '}
               </h1>
               <p className="mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
@@ -37,15 +37,15 @@ export default function Home() {
               <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center lg:items-start">
                 <div className="space-y-2">
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="w-5 h-5 shrink-0 text-violet-400" />
+                    <Check className="w-5 h-5 shrink-0 text-yellow-500" />
                     Lorem ipsum dolor sit amet.
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="w-5 h-5 shrink-0 text-violet-400" />
+                    <Check className="w-5 h-5 shrink-0 text-yellow-500" />
                     Lorem, ipsum dolor.
                   </li>
                   <li className="flex gap-1.5 items-center text-left">
-                    <Check className="w-5 h-5 shrink-0 text-violet-400" />
+                    <Check className="w-5 h-5 shrink-0 text-yellow-500" />
                     Lorem ipsum dolor sit amet consectetur.
                   </li>
                 </div>
@@ -92,11 +92,11 @@ export default function Home() {
 
                 <div className="flex flex-col justify-between items-center sm:items-start">
                   <div className="flex gap-1.5">
-                    <Star className="h-4 w-4 fill-violet-400 text-violet-400" />
-                    <Star className="h-4 w-4 fill-violet-400 text-violet-400" />
-                    <Star className="h-4 w-4 fill-violet-400 text-violet-400" />
-                    <Star className="h-4 w-4 fill-violet-400 text-violet-400" />
-                    <Star className="h-4 w-4 fill-violet-400 text-violet-400" />
+                    <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                    <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                    <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                    <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                    <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
                   </div>
 
                   <p>
