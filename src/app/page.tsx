@@ -1,3 +1,4 @@
+import { Icons } from '@/components/Icons';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import Phone from '@/components/Phone';
 import { Check, Star } from 'lucide-react';
@@ -12,7 +13,7 @@ export default function Home() {
             <div className="relative mx-auto items-center lg:items-start text-center lg:text-left flex flex-col">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
                 <Image
-                  src="/case-1.jpg"
+                  src="/case-1.png"
                   height={700}
                   width={700}
                   alt=""
@@ -124,6 +125,68 @@ export default function Home() {
                 className="absolute w-20 -left-6 -bottom-6 select-none"
               />
               <Phone imgSrc="/user/user-5.jpg" className="w-64" />
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </section>
+
+      {/* proposion section */}
+      <section>
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
+            <h2 className="order-1 mt-2 text-center tracking-tight text-balance font-bold !leading-tight text-gray-900 text-5xl md:text-6xl">
+              Lorem ipsum{' '}
+              <span className="relative px-2">
+                dolor sit{' '}
+                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-yellow-500" />
+              </span>{' '}
+              amet.
+            </h2>
+            <Image
+              src="/case-1.png"
+              height={700}
+              width={700}
+              alt=""
+              className="w-24 order-0 lg:order-2"
+            />
+          </div>
+
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
+            <div className="flex flex-auto flex-col gap-4 lg:pr-8">
+              <div className="flex gap-0.5 mb-2">
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+              </div>
+              <div className="text-lg leading-8">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore, a nobis dolores illum, alias deleniti quis porro {''}
+                  <span className="bg-slate-800 text-white p-0.5">
+                    dolore deserunt voluptates dicta quod{' '}
+                  </span>
+                  aliquam nisi amet id quia animi quasi? Alias blanditiis
+                  ducimus voluptate suscipit facere?
+                </p>
+              </div>
+              <div className="flex gap-4 mt-2">
+                <Image
+                  src="/user/user-1.jpg"
+                  height={20}
+                  width={20}
+                  alt="user image"
+                  className="h-12 w-12 rounded-full object-cover "
+                />
+                <div className="flex flex-col">
+                  <p className="font-semibold">Mizeath</p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-4 w-4 stroke-[3px] text-yellow-600" />
+                    <p className="text-sm">Verified Purchase</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </MaxWidthWrapper>
