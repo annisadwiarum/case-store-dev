@@ -1,6 +1,7 @@
 import { Icons } from '@/components/Icons';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import Phone from '@/components/Phone';
+import { Reviews } from '@/components/Reviews';
 import { Check, Star } from 'lucide-react';
 import Image from 'next/image';
 
@@ -180,7 +181,7 @@ export default function Home() {
                   className="h-12 w-12 rounded-full object-cover "
                 />
                 <div className="flex flex-col">
-                  <p className="font-semibold">Mizeath</p>
+                  <p className="font-semibold">Kaiser 😁 </p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
                     <Check className="h-4 w-4 stroke-[3px] text-yellow-600" />
                     <p className="text-sm">Verified Purchase</p>
@@ -188,6 +189,46 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="flex flex-auto flex-col gap-4 lg:pr-8">
+              <div className="flex gap-0.5 mb-2">
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+                <Star className="h-4 w-4 fill-yellow-500 text-yellow-500" />
+              </div>
+              <div className="text-lg leading-8">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore, a nobis dolores illum, alias deleniti quis porro {''}
+                  <span className="bg-slate-800 text-white p-0.5">
+                    dolore deserunt voluptates dicta quod{' '}
+                  </span>
+                  aliquam nisi amet id quia animi quasi? Alias blanditiis
+                  ducimus voluptate suscipit facere?
+                </p>
+              </div>
+              <div className="flex gap-4 mt-2">
+                <Image
+                  src="/user/user-4.jpg"
+                  height={20}
+                  width={20}
+                  alt="user image"
+                  className="h-12 w-12 rounded-full object-cover "
+                />
+                <div className="flex flex-col">
+                  <p className="font-semibold">Annisa 😎 </p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-4 w-4 stroke-[3px] text-yellow-600" />
+                    <p className="text-sm">Verified Purchase</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-16">
+            <Reviews />
           </div>
         </MaxWidthWrapper>
       </section>
