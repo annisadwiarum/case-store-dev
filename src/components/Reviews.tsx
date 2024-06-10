@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import MaxWidthWrapper from './MaxWidthWrapper';
-import { useRef } from 'react';
-import { useInView } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
+import { inView, useInView } from 'framer-motion';
+import { cn } from '@/lib/utils';
 
 const PHONES = [
   '/user-1.jpg',
@@ -37,7 +38,33 @@ function ReviewColumn({
   className: string;
   reviewClassName?: (reviewIndex: number) => string;
   msPerPixel?: number;
-}) {}
+}) {
+  const columnRef = useRef<HTMLDivElement | null>(null);
+  const [columnHeight, setColumnHeight] = useState(0);
+  const duration = `${columnHeight * msPerPixel}ms`;
+
+  useEffect(() => {
+    if (!columnRef.current) return;
+
+    const resizeObserver = new window.ResizeObserver(() => {
+      setColumnHeight(columnRef.current?.offsetHeight ?? 0);
+    });
+
+    resizeObserver.observe(columnRef.current);
+
+    return () => {
+      resizeObserver.disconnect;
+    };
+  }, []);
+
+  return (
+    <div
+      ref={columnRef}
+      className={(cn('animate-marquee space-y-8 py-4'), className)}
+      style={{ '--marquee-duration': duration } as React.CSSProperties}
+    ></div>
+  );
+}
 
 function ReviewGrid() {
   const containerRef = useRef<HTMLDivElement | null>(null);
