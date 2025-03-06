@@ -79,11 +79,7 @@ function ReviewGrid() {
       ref={containerRef}
       className="relative -mx-4 mt-16 grid h-[49rem] max-h-[150vh] grid-cols-1 items-start gap-8 overflow-hidden px-4 sm:mt-20 md:grid-cols-2 lg:grid-cols-3"
     >
-      {IsInView ? (
-        <>
-          <ReviewColumn />
-        </>
-      ) : null}
+      {IsInView ? <>{/* <ReviewColumn /> */}</> : null}
     </div>
   );
 }
